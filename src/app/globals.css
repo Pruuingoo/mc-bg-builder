@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bebas+Neue&display=swap");
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0b0b0e;
+  --panel: #111116;
+  --border: #1e1e2c;
+  --border2: #2a2a3a;
+  --green: #3dff72;
+  --green-dim: #162a1e;
+  --amber: #ffc04a;
+  --red: #ff4a4a;
+  --blue: #4ab4ff;
+  --text: #c8c8e0;
+  --muted: #48486a;
+  --white: #f0f0ff;
+  --surface: #16161d;
+
+  --font-mono: "Space Mono", monospace;
+  --font-display: "Bebas Neue", sans-serif;
+}
+
+[data-theme="light"] {
+  --bg: #f2f2f6;
+  --panel: #ffffff;
+  --border: #dcdce8;
+  --border2: #c4c4d4;
+  --green: #1a9e3f;
+  --green-dim: #d4f0dc;
+  --amber: #b06a00;
+  --red: #cc2222;
+  --blue: #0060bb;
+  --text: #1e1e2e;
+  --muted: #6868a0;
+  --white: #0a0a14;
+  --surface: #e8e8f2;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 0.2s, color 0.2s;
+}
+
+a { color: inherit; }
+
+button {
+  cursor: pointer;
+  font-family: var(--font-mono);
+}
+
+code {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 2px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}

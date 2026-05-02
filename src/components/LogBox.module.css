@@ -1,0 +1,30 @@
+.box {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 14px 16px;
+  font-size: 11px;
+  line-height: 2.2;
+  min-height: 80px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.icon {
+  width: 14px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.ok     { color: var(--green); }
+.warn   { color: var(--amber); }
+.err    { color: var(--red); }
+.info   { color: var(--muted); }
+.active { color: var(--white); }
